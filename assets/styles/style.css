@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Roboto");
+* { margin: 0; padding: 0; }
+
+body { height: 100vh; width: 100%; overflow: hidden; background-image: url("../images/background.jpg"); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; background-position: center center; position: relative; }
+body div#blur { border-radius: 15px; width: 400px; height: 450px; position: absolute; left: 50%; top: 50%; margin: -225px 0 0 -175px; background: inherit; overflow: hidden; }
+body div#blur:before { content: " "; position: absolute; background: inherit; width: 450px; height: 500px; top: -25px; right: 0; bottom: 0; left: -25px; background-shadow: inset 0 0 0 300px rgba(255, 255, 255, 0.7); filter: blur(10px); }
+
+form { height: 90%; width: 350px; text-align: right; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 1001; }
+form div { width: 100%; height: 45px; margin-bottom: 10px; }
+form div > span { width: 15%; height: 45px; padding: 10px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; float: left; background-color: #31373c; border: 1px solid #31373c; }
+form div > span img { max-width: 100%; height: auto; }
+form div input { font-family: 'Lato', sans-serif; font-size: 15px; padding-left: 10px; box-sizing: border-box; height: 45px; width: 85%; outline: 0; border: 0; border-radius: 0 5px 5px 0; background: #3d444a; opacity: 0.55; }
+form div input::placeholder { color: #bbbbbb; }
+form div input:focus { color: #fff; border: 2px solid #31373c; border-left: 0; outline: none !important; }
+form div input:focus::placeholder { color: #eee; }
+
+form div:first-child { text-transform: uppercase; font-family: 'Roboto', sans-serif; font-size: 20px; margin-bottom: 15px; text-align-last: center; color: #51A4AC; }
+form div:first-child h1 { opacity: 1; }
+form div:last-child { margin-top: 30px; }
+form div:last-child #signIn { float: left; margin-right: 15px; opacity: 0.5 !important; background-color: #51A4AC !important; width: 35% !important; }
+form div:last-child #signIn:hover { opacity: 0.9 !important; }
+form div #confirmBtn, form div:last-child #signIn { cursor: pointer; position: relative; width: 60%; text-align: center; padding: 0; border-radius: 5px; background-color: #51A4AC; color: #fff; transition: all 0.2s ease-in-out 0s; backface-visibility: hidden; outline: none; border: 0; opacity: 1; }
+form div #confirmBtn:hover, form div:last-child #signIn:hover { background-color: #62aeb5; }
+
+/*# sourceMappingURL=style.css.map */
