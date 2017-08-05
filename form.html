@@ -1,0 +1,49 @@
+<?php 
+// session_start();
+// $_SESSION['message'];
+ ?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form authntication</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+
+<body>
+<div class="alert alert-error">  </div>
+    <div id="blur">
+        <form action="index.php" method="post">
+            <div>
+                <h1>Registration <?php echo $_SESSION['message']; ?></h1>
+            </div>
+            <div>
+                <span><img src="assets/images/icons/user.png"></span>
+                <input type="text" placeholder="User Name" name="username" id="name"  autocomplete="off" required>
+            </div>
+            <div>
+                <span><img src="assets/images/icons/email.png"></span>
+                <input type="email" placeholder="User email" id="email" name="email" autocomplete="off" required>
+            </div>
+            <div>
+                <span><img src="assets/images/icons/key.png"></span>
+                <input type="password" placeholder="User password" id="password" name="password" autocomplete="off" required>
+            </div>
+            <div>
+                <span><img src="assets/images/icons/lock.png"></span>
+                <input type="password" placeholder="Password comfirmation" id="passComfirmation" 
+                name="passComfirmation" required>
+
+            </div>
+            <div>
+			<input type="button" id="signIn" value="Sign In" onclick="window.location.href='welcome.html.php'">
+            <input type="submit" value="Confirm" id="confirmBtn"></div>
+        </form>
+    </div>
+</body>
+
+</html>
+
+

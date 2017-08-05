@@ -88,6 +88,7 @@ form {
             border: 0;
             border-radius: 0 5px 5px 0;
             background: darken(rgb(72, 81, 88), 5%);
+            color:#fff;
             opacity: 0.55;
             &::placeholder {
                 color: darken(#eee, 20%);
