@@ -1,4 +1,5 @@
 <?php 
+require 'includes.php';
 session_start();
 $message = $_SESSION['message'];
 $mysqli = new mysqli('localhost','root','','accounts');
@@ -12,7 +13,7 @@ $result = $mysqli->query($sql);
  	<title>Document</title>
  </head>
  <body>
-	<h1> <?php print_r($message); ?> </h1> 	
+	<h1> <?php htmlOut($message); ?> </h1> 	
 	<table>
 		<tr>
 			<th>Name</th>

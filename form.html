@@ -1,7 +1,5 @@
 <?php 
-// session_start();
-// $_SESSION['message'];
- ?>
+require 'includes.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +15,7 @@
     <div id="blur">
         <form action="index.php" method="post">
             <div>
-                <h1>Registration <?php echo $_SESSION['message']; ?></h1>
+                <h1>Registration <?php htmlOut($_SESSION['message']); ?></h1>
             </div>
             <div>
                 <span><img src="assets/images/icons/user.png"></span>
